@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_profil"
+            android:layout_height="50dp"
+            android:layout_width="50dp"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgProfile"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="User"
+
+            />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:layout_weight="1"
+        android:rowCount="5"
+        android:columnCount="2">
+    <Button
+       android:id="@+id/Button_1"
+        android:gravity="fill"
+        android:layout_margin="50sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:src="@drawable/ic_profil"/>
+        <Button
+            android:id="@+id/Button_2"
+            android:gravity="fill"
+            android:layout_margin="50sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/ic_profil"/>
+        <Button
+            android:id="@+id/Button_3"
+            android:gravity="fill"
+            android:layout_margin="50sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/ic_profil"/>
+        <Button
+            android:id="@+id/Button_4"
+            android:gravity="fill"
+            android:layout_margin="50sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/ic_profil"/>
+
+    </GridLayout>
+</RelativeLayout>
